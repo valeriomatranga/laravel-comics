@@ -1,7 +1,8 @@
-* {
+@import url(https://fonts.googleapis.com/css2?family=Share:wght@400;700&display=swap);* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Share", cursive;
 }
 
 .top_header {
@@ -11,7 +12,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 20%;
+  padding: 0 15%;
 }
 .top_header span {
   margin-left: 40px;
@@ -24,7 +25,7 @@
   align-items: center;
   width: 100%;
   margin: auto;
-  padding: 10px 20%;
+  padding: 10px 15%;
   justify-content: space-between;
 }
 .nav_header a {
@@ -48,7 +49,7 @@
   background-color: black;
   display: flex;
   justify-content: center;
-  padding: 20px 20%;
+  padding: 20px 15%;
 }
 .content button {
   background-color: #0282f9;
@@ -65,12 +66,13 @@
   background-color: #0282f9;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px 20%;
+  justify-content: space-around;
+  padding: 20px 15%;
 }
 #sponsor div {
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 #sponsor div img {
   width: 50px;
@@ -85,14 +87,17 @@
 
 footer {
   width: 100%;
-  height: 400px;
-  padding: 20px 20%;
+  height: 410px;
+  padding: 0px 15%;
   background-image: url(../img/footer-bg.jpg);
   display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 footer #footer_left,
 footer #footer_right {
   width: 50%;
+  height: 355px;
 }
 footer #footer_left {
   display: flex;
@@ -102,4 +107,60 @@ footer #footer_left .colon_center,
 footer #footer_left .colon_right {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+}
+footer #footer_left .colon_left h2,
+footer #footer_left .colon_center h2,
+footer #footer_left .colon_right h2 {
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+footer #footer_left .colon_left a,
+footer #footer_left .colon_center a,
+footer #footer_left .colon_right a {
+  color: grey;
+  text-decoration: none;
+  padding: 1px;
+}
+footer #footer_right {
+  display: flex;
+  justify-content: flex-end;
+}
+footer #footer_right img {
+  position: absolute;
+  top: -80px;
+}
+footer .footer_left_bottom {
+  padding: 10px;
+  width: 50%;
+}
+footer .footer_left_bottom p {
+  color: grey;
+}
+footer .footer_left_bottom a {
+  color: #0282f9;
+}
+
+.social {
+  width: 100%;
+  height: 70px;
+  background-color: #303030;
+  z-index: 1;
+}
+.social .social_left,
+.social .social_right {
+  width: 50%;
+  height: 100%;
+  background-color: #303030;
+  display: flex;
+  align-items: center;
+}
+.social .social_left button,
+.social .social_right button {
+  color: white;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 2px solid #0282f9;
 }

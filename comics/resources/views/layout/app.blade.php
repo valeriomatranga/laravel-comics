@@ -14,23 +14,23 @@
             <span>addicional dc sites</span>
         </div>
         <div class="nav_header">
-        <img src="./img/dc-logo.png" alt="">
-        <nav>
-            <a href="{{route('home')}}">Home</a>
-            <a href="{{route('characters')}}">Characters</a>
-            <a href="{{route('comics')}}">Comics</a>
-            <a href="{{route('movies')}}">Movies</a>
-            <a href="{{route('tv')}}">Tv</a>
-            <a href="{{route('games')}}">Games</a>
-            <a href="{{route('collectibles')}}">Collectibles</a>
-            <a href="{{route('videos')}}">Videos</a>
-            <a href="{{route('fans')}}">Fans</a>
-            <a href="{{route('news')}}">News</a>
-            <a href="{{route('shop')}}">Shop</a>
-        </nav>
-        <form action="search">
-            <input type="text" placeholder="Search">
-        </form>
+            <img src="./img/dc-logo.png" alt="">
+            <nav>
+                <a href="{{route('home')}}">Home</a>
+                <a href="{{route('characters')}}">Characters</a>
+                <a href="{{route('comics')}}">Comics</a>
+                <a href="{{route('movies')}}">Movies</a>
+                <a href="{{route('tv')}}">Tv</a>
+                <a href="{{route('games')}}">Games</a>
+                <a href="{{route('collectibles')}}">Collectibles</a>
+                <a href="{{route('videos')}}">Videos</a>
+                <a href="{{route('fans')}}">Fans</a>
+                <a href="{{route('news')}}">News</a>
+                <a href="{{route('shop')}}">Shop</a>
+            </nav>
+            <form action="search">
+                <input type="text" placeholder="Search">
+            </form>
        </div>
 
     </header>
@@ -109,8 +109,18 @@
         <div id="footer_right">
             <img src="./img/dc-logo-bg.png" alt="">
         </div>
-
+        <div class="footer_left_bottom">
+            <p>All Site Content TM And 2020 DC Entertainment, unless otherwise <a href="#">noted here</a>. All rights reserved.</p>
+            <a href="#">Cookies Settings</a>
+        </div>
+        
     </footer>
+    <div class="social">
+        <div class="social_left">
+            <button>sign-up-now!</button>
+        </div>
+        <div class="social_right"></div>
+    </div>
 
 </body>
 </html>

@@ -42,13 +42,14 @@ footer{
 
     #footer_left{
         display: flex;
+        flex-wrap: wrap;
 
         .colon_left,
         .colon_center,
         .colon_right{
             display: flex;
             flex-direction: column;
-            padding: 10px;
+            padding: 10px 10px 10px 0px;
             h2{
                 color: white;
                 text-transform: uppercase;
@@ -72,8 +73,8 @@ footer{
     }
 
     .footer_left_bottom{
-        padding: 10px;
-        width: 50%;
+        padding: 10px 10px 10px 0px;
+        width: 100%;
         p{
             color: grey;
         }
@@ -86,25 +87,36 @@ footer{
 
 .social{
     width: 100%;
+    padding: 10px 15%;
     height: 70px;
     background-color: rgba(48, 48, 48, 1);
-    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    .social_left,
-    .social_right{
-        width: 50%;
-        height: 100%;
-        background-color: rgba(48, 48, 48, 1);
-        display: flex;
-        align-items: center;
+    button{
+        color: white;
+        background-color: transparent;
+        text-transform: uppercase;
+        padding: 10px;
+        border: 2px solid #0282f9;
+    }
 
+    .icon_social{
 
-        button{
-            color: white;
-            background-color: transparent;
+        span{
+            color: #0282f9;
             text-transform: uppercase;
-            padding: 10px;
-            border: 2px solid #0282f9;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        a{
+            text-decoration: none;
+            background-color: gray;
+            padding: 7px;
+            border-radius: 50%;
+            margin: 5px;
+            color:rgba(48, 48, 48, 1);
         }
     }
 

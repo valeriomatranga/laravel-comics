@@ -58,6 +58,13 @@
   background-size: cover;
 }
 
+.singol {
+  width: 100%;
+  height: 80px;
+  background-color: #0282f9;
+  z-index: 1;
+}
+
 .content {
   width: 100%;
   background-color: #1c1c1c;
@@ -72,6 +79,8 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  /* singol page */
+  /* /singol page */
 }
 .content .container h1 {
   color: white;
@@ -80,18 +89,87 @@
   position: absolute;
   top: -25px;
 }
+.content .container .comic_show {
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: -360px;
+}
+.content .container .comic_show #book,
+.content .container .comic_show #gallery {
+  text-transform: uppercase;
+  color: white;
+  background-color: #00a9d9;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+.content .container .comic_show #book {
+  width: 50%;
+  top: 0;
+}
+.content .container .comic_show #gallery {
+  width: 100%;
+  bottom: 0;
+}
+.content .container .description {
+  width: 100%;
+  display: flex;
+}
+.content .container .description .description_left {
+  width: 70%;
+}
+.content .container .description .description_left #title {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.content .container .description .description_left #date {
+  width: 100%;
+  height: 40px;
+  background-color: #55ba59;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.content .container .description .description_left #date #price {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  color: white;
+  border-right: 1px solid black;
+}
+.content .container .description .description_left #date #price span {
+  color: lightgrey;
+}
+.content .container .description .description_left #date #price span a {
+  color: white;
+}
+.content .container .description .description_left #date #check {
+  width: 20%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .container .description .description_right {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
 .content .container .comic {
   padding: 0.5rem;
   width: calc(100% / 6 );
 }
 .content .container .comic a {
   width: 100%;
-  color: white;
   text-decoration: none;
   display: flex;
   flex-direction: column;
 }
-.content .container .comic a span {
+.content .container .comic span {
+  color: white;
   margin-top: 10px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -145,13 +223,14 @@ footer #footer_right {
 }
 footer #footer_left {
   display: flex;
+  flex-wrap: wrap;
 }
 footer #footer_left .colon_left,
 footer #footer_left .colon_center,
 footer #footer_left .colon_right {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 10px 10px 0px;
 }
 footer #footer_left .colon_left h2,
 footer #footer_left .colon_center h2,
@@ -176,8 +255,8 @@ footer #footer_right {
   height: 100%;
 }
 footer .footer_left_bottom {
-  padding: 10px;
-  width: 50%;
+  padding: 10px 10px 10px 0px;
+  width: 100%;
 }
 footer .footer_left_bottom p {
   color: grey;
@@ -188,23 +267,31 @@ footer .footer_left_bottom a {
 
 .social {
   width: 100%;
+  padding: 10px 15%;
   height: 70px;
-  background-color: #303030;
-  z-index: 1;
-}
-.social .social_left,
-.social .social_right {
-  width: 50%;
-  height: 100%;
   background-color: #303030;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-.social .social_left button,
-.social .social_right button {
+.social button {
   color: white;
   background-color: transparent;
   text-transform: uppercase;
   padding: 10px;
   border: 2px solid #0282f9;
+}
+.social .icon_social span {
+  color: #0282f9;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.social .icon_social a {
+  text-decoration: none;
+  background-color: gray;
+  padding: 7px;
+  border-radius: 50%;
+  margin: 5px;
+  color: #303030;
 }

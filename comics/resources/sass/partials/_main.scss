@@ -44,7 +44,7 @@
                 justify-content: center;
             }
             #book{
-                width: 50%;
+                padding: 0 10px;
                 top: 0;
             }
             #gallery{
@@ -119,6 +119,19 @@
                 margin-top: 10px;
                 margin-bottom: 20px;
                 text-transform: uppercase;
+            }
+        }
+
+        #cont_bott{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            #cont_left{
+                width: 45%;
+            }
+            #cont_right{
+                width: 45%;
             }
         }
     }

@@ -24,19 +24,19 @@
         <div class="icon_social">
             <span>follow us</span>
             <a href="#">
-                <i class="fab fa-facebook-f "></i>
+                <img src="{{asset('img/footer-facebook.png')}}" alt="">
             </a>
             <a href="#">
-                <i class="fab fa-twitter "></i>
+                <img src="{{asset('img/footer-twitter.png')}}" alt="">
             </a>
             <a href="#">
-                <i class="fab fa-youtube-square"></i>
+                <img src="{{asset('img/footer-youtube.png')}}" alt="">
             </a>
             <a href="#">
-                <i class="fab fa-pinterest-p"></i>
+                <img src="{{asset('img/footer-pinterest.png')}}" alt="">
             </a>
             <a href="#">
-                <i class="fas fa-map-marker-alt"></i>
+                <img src="{{asset('img/footer-periscope.png')}}" alt="">
             </a>
         </div>
     </div>

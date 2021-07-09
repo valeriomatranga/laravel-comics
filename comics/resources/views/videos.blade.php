@@ -1,3 +1,3 @@
 @extends('layout.app')
 
-<h1>Videos</h1>
+@section('title', 'videos')

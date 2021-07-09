@@ -1,3 +1,3 @@
 @extends('layout.app')
 
-<h1>Characters</h1>
+@section('title', 'characters')

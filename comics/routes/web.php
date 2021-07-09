@@ -13,17 +13,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
-
 Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
 
 Route::get('/comics', function () {
-    return view('comics');
+    $comics = config('comics.data');
+    //ddd($comics);
+    return view('comics.index', compact('comics'));
 })->name('comics');
+
+Route::get('comics/{id}', function($id){
+    $comics = config('comics.data');
+    //ddd($comics[$id]);
+    if(is_numeric($id) && $id < count($comics) && $id >= 0){
+
+        $comic = $comics[$id];
+        return view('comics.show', compact('comic'));
+    }else{
+        abort(404);
+    }
+})->name('comic');
 
 Route::get('/movies', function () {
     return view('movies');

@@ -12,11 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function () {
+    return view('characters.index');
+});
 
 Route::get('/characters', function () {
-    return view('characters');
+    return view('characters.index');
 })->name('characters');
 
+/* comics */
 Route::get('/comics', function () {
     $comics = config('comics.data');
     //ddd($comics);
@@ -34,37 +38,38 @@ Route::get('comics/{id}', function($id){
         abort(404);
     }
 })->name('comic');
+/* /comics */
 
 Route::get('/movies', function () {
-    return view('movies');
+    return view('movies.index');
 })->name('movies');
 
 Route::get('/tv', function () {
-    return view('tv');
+    return view('tv.index');
 })->name('tv');
 
 Route::get('/games', function () {
-    return view('games');
+    return view('games.index');
 })->name('games');
 
 Route::get('/collectibles', function () {
-    return view('collectibles');
+    return view('collectibles.index');
 })->name('collectibles');
 
 Route::get('/videos', function () {
-    return view('videos');
+    return view('videos.index');
 })->name('videos');
 
 Route::get('/fans', function () {
-    return view('fans');
+    return view('fans.index');
 })->name('fans');
 
 Route::get('/news', function () {
-    return view('news');
+    return view('news.index');
 })->name('news');
 
 Route::get('/shop', function () {
-    return view('shop');
+    return view('shop.index');
 })->name('shop');
 
 

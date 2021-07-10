@@ -18,6 +18,7 @@
                 <a href="{{route('news')}}" class="{{ Route::currentRouteName() === 'news' ? 'active' : '' }}">News</a>
                 <a href="{{route('shop')}}" class="{{ Route::currentRouteName() === 'shop' ? 'active' : '' }}">Shop</a>
             </nav>
+            
             <form action="search">
                 <input type="text" placeholder="Search">
             </form>

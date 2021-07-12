@@ -3,7 +3,9 @@
 @section('title', 'comics')
 
 @section('content')
-    <div class="container">
+    <div class="singol"></div>
+
+    <div class="container_show">
 
         <div class="comic_show">
             <img src="{{$comic['thumb']}}" alt="">

@@ -15,7 +15,10 @@
 <body>
     @include('layout/partials.header')
 
-    @include('layout/partials.main')
+    <main>
+        @yield('content')
+    </main>
+
 
     @include('layout/partials.footer')
 

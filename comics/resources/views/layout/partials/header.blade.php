@@ -22,6 +22,7 @@
             <form action="search">
                 <input type="text" placeholder="Search">
             </form>
-       </div>
+        </div>
+        <div id="jumbotron"></div>
 
     </header>

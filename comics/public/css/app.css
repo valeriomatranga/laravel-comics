@@ -84,8 +84,6 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  /* singol page */
-  /* /singol page */
 }
 .content .container h1 {
   color: white;
@@ -93,75 +91,6 @@
   padding: 10px;
   position: absolute;
   top: -25px;
-}
-.content .container .comic_show {
-  position: relative;
-  margin-bottom: 100px;
-  margin-top: -360px;
-}
-.content .container .comic_show #book,
-.content .container .comic_show #gallery {
-  text-transform: uppercase;
-  color: white;
-  background-color: #00a9d9;
-  position: absolute;
-  left: 0;
-  display: flex;
-  justify-content: center;
-}
-.content .container .comic_show #book {
-  padding: 0 10px;
-  top: 0;
-}
-.content .container .comic_show #gallery {
-  width: 100%;
-  bottom: 0;
-}
-.content .container .description {
-  width: 100%;
-  display: flex;
-}
-.content .container .description .description_left {
-  width: 70%;
-}
-.content .container .description .description_left #title {
-  text-transform: uppercase;
-  font-size: 2rem;
-}
-.content .container .description .description_left #date {
-  width: 100%;
-  height: 40px;
-  background-color: #55ba59;
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-.content .container .description .description_left #date #price {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 20px;
-  color: white;
-  border-right: 1px solid black;
-}
-.content .container .description .description_left #date #price span {
-  color: lightgrey;
-}
-.content .container .description .description_left #date #price span a {
-  color: white;
-}
-.content .container .description .description_left #date #check {
-  width: 20%;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.content .container .description .description_right {
-  width: 30%;
-  display: flex;
-  justify-content: flex-end;
 }
 .content .container .comic {
   padding: 0.5rem;
@@ -179,17 +108,6 @@
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-.content .container #cont_bott {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.content .container #cont_bott #cont_left {
-  width: 45%;
-}
-.content .container #cont_bott #cont_right {
-  width: 45%;
-}
 .content button {
   background-color: #0282f9;
   color: white;
@@ -197,6 +115,95 @@
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
+}
+
+/* singol page */
+.container_show {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* /singol page */
+}
+.container_show .comic_show {
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: -320px;
+}
+.container_show .comic_show #book,
+.container_show .comic_show #gallery {
+  text-transform: uppercase;
+  color: white;
+  background-color: #00a9d9;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+.container_show .comic_show #book {
+  padding: 0 10px;
+  top: 0;
+}
+.container_show .comic_show #gallery {
+  width: 100%;
+  bottom: 0;
+}
+.container_show .description {
+  width: 100%;
+  display: flex;
+}
+.container_show .description .description_left {
+  width: 70%;
+}
+.container_show .description .description_left #title {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.container_show .description .description_left #date {
+  width: 100%;
+  height: 40px;
+  background-color: #55ba59;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.container_show .description .description_left #date #price {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  color: white;
+  border-right: 1px solid black;
+}
+.container_show .description .description_left #date #price span {
+  color: lightgrey;
+}
+.container_show .description .description_left #date #price span a {
+  color: white;
+}
+.container_show .description .description_left #date #check {
+  width: 20%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_show .description .description_right {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+.container_show #cont_bott {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container_show #cont_bott #cont_left {
+  width: 45%;
+}
+.container_show #cont_bott #cont_right {
+  width: 45%;
 }
 
 #sponsor {

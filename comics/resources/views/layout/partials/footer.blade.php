@@ -46,3 +46,26 @@
         </div>
         <div id="footer_right"> {{-- contiene un immagine di background --}}</div> 
     </footer>
+
+    <div class="social">
+        <button>sign-up-now!</button>
+        <div class="icon_social">
+            <span>follow us</span>
+            <a href="#">
+                <img src="{{asset('img/footer-facebook.png')}}" alt="">
+            </a>
+            <a href="#">
+                <img src="{{asset('img/footer-twitter.png')}}" alt="">
+            </a>
+            <a href="#">
+                <img src="{{asset('img/footer-youtube.png')}}" alt="">
+            </a>
+            <a href="#">
+                <img src="{{asset('img/footer-pinterest.png')}}" alt="">
+            </a>
+            <a href="#">
+                <img src="{{asset('img/footer-periscope.png')}}" alt="">
+            </a>
+        </div>
+    </div>
+
